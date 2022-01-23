@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      color: indigo;
+    }
+    p::first-letter {
+      color: magenta;
+    }
+    p::before {
+      content: "•";
+      color: black;
+    }
+    p::after {
+      content: "☄︎";
+    }
+    p:hover {
+      color: lawngreen;
+    }
+    div p:nth-child(2) {
+      color: lightcoral;
+    }
+  </style>
+  <body>
+    <p>Hola</p>
+    <div>
+      <p>Platzi</p>
+      <p>Master</p>
+      <p>Es lo mejor</p>
+    </div>
+  </body>
+</html>
